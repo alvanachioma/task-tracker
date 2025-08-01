@@ -19,14 +19,15 @@ import {Component} from '@angular/core';
             <!--div holding the picture and writeup-->
             <!--image-->
             <div class="flex">
-              <img class="[]" src="font/WIN_20240805_08_12_12_Pro.jpg" alt="">
+              <div class="flex">
+                <img class="[]" src="images/myprofile.jpg" alt="">
 
               <!--ends image section-->
               <!--Nixen-->
 
               <!--Nixen write up-->
               <div class="flex flex-col p-3">
-                <div class="text-white font-bold ">Daniel<br> Nixen<br><span
+                <div class="text-white font-bold ">Iwuh<br> Alvana<br><span
                   class="text-gray-300 font-light text-[10px]">USUK designer</span>
                 </div>
                 <!--Nixen write up-->
@@ -62,7 +63,7 @@ import {Component} from '@angular/core';
               <!--first picture and write up-->
               <div class="flex items-center flex-col relative"><img
                 class="bg-red-400 w-[40px] h-[40px] rounded-full"
-                src="font/WIN_20240805_08_12_12_Pro.jpg" alt="">
+                src="images/myprofile.jpg" alt="">
                 <span class="bg-orange-300 w-3 h-3 border-2 border-white rounded-full absolute left-4"></span>
                 <div class="text-center">
                   <p class="text-[13px] font-bold text-gray-700 ">Louise Green</p>
@@ -72,7 +73,7 @@ import {Component} from '@angular/core';
               <!--second picture and write up-->
               <div class="flex items-center flex-col relative"><img
                 class="bg-white w-[40px] h-[40px] rounded-full"
-                src="font/WIN_20240805_08_12_12_Pro.jpg" alt="">
+                src="images/myprofile.jpg" alt="">
                 <span class="bg-orange-300 w-3 h-3 border-2 border-white rounded-full absolute left-3"></span>
                 <div class="text-center">
                   <p class="text-[13px] font-bold text-gray-700 ">Mark Fell</p>
@@ -82,7 +83,7 @@ import {Component} from '@angular/core';
               <!--third picture and write up-->
               <div class="flex items-center flex-col relative"><img
                 class="bg-white w-[40px] h-[40px] rounded-full"
-                src="font/WIN_20240805_08_12_12_Pro.jpg" alt="">
+                src="images/myprofile.jpg" alt="">
                 <span class="bg-orange-300 w-3 h-3 border-2 border-white rounded-full absolute left-5"></span>
                 <div class="text-center">
                   <p class="text-[13px] font-bold text-gray-700 ">Anna Fish</p>
@@ -92,7 +93,7 @@ import {Component} from '@angular/core';
               <!--fourth picture and write up-->
               <div class="flex items-center flex-col relative"><img
                 class="bg-white w-[40px] h-[40px] rounded-full"
-                src="font/WIN_20240805_08_12_12_Pro.jpg" alt="">
+                src="images/myprofile.jpg" alt="">
                 <span class="bg-orange-300 w-3 h-3 border-2 border-white rounded-full absolute left-5"></span>
                 <div class="text-center">
                   <p class="text-[13px] font-bold text-gray-700">Kelvin Less</p>
@@ -142,6 +143,7 @@ import {Component} from '@angular/core';
           </div>
         </div>
       </div>
+    </div>
     </div>
   `,
 })
