@@ -1,12 +1,30 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import {LogoComponents} from '../task-components/logo-section';
+
+
+
+
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  imports: [
+    LogoComponents,
+
+
+
+  ],
+  template: `
+    <logo-sections/>
+
+
+  `,
+  styles:[],
+
 })
 export class AppComponent {
   title = 'tax-project';
 }
+
+
+
