@@ -69,7 +69,7 @@ import {Component} from '@angular/core';
         <div class="flex flex-col space-y-4 p-2 ">
           <!--progress-->
 
-          <div class="bg-white w-[416px] h-[250px] rounded-2xl">
+          <div class="bg-white  h-[250px] rounded-2xl">
             <div class="flex justify-between px-5 py-2">
               <div class="text-gray-900 text-[15px] font-bold ">progress</div>
               <div class="text-gray-500 text-[13px]-">a week</div>
@@ -143,7 +143,7 @@ import {Component} from '@angular/core';
 
           <!--ends the progress-->
           <!--the third div-->
-          <div class="bg-white w-[411px] h-[120px] rounded-2xl">
+          <div class="bg-white  h-[120px] rounded-2xl">
             <div class="flex justify-between pt-3 p-3">
               <div class=" text-gray-900 text-[15px] font-bold ">Documents</div>
               <button class="bg-white text-center text-gray-500 text-[13px] cursor-pointer

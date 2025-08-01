@@ -15,7 +15,7 @@ import {ProgressComponents} from './progress-section';
     <!--flex holding the 3 divs-->
     <div class="flex">
       <!--side menu container-->
-      <div class="  w-[100px] h-[450px] pt-3 flex flex-col justify-between items-center ">
+      <div class="  h-[450px] pt-3 p-5 flex flex-col justify-between items-center ">
         <!--flex div for the first four-->
         <div class=" flex flex-col space-y-2">
           <!--the first five circle-->

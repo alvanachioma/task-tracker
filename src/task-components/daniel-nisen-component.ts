@@ -10,12 +10,12 @@ import {Component} from '@angular/core';
   template: `
     <!--first div in the main content after side menu-->
 
-    <div class="w-[450px] h-[466px] ">
+    <div class=" h-[466px] ">
       <!--first  container div in the main content with three div-->
       <div>
         <!--Daniel Nixen design-->
         <div class="pb-3">
-          <div class=" bg-sky-500 w-[440px] h-[180px] rounded-2xl flex ">
+          <div class=" bg-sky-500  h-[180px] rounded-2xl flex ">
             <!--div holding the picture and writeup-->
             <!--image-->
             <div class="flex">
@@ -26,7 +26,7 @@ import {Component} from '@angular/core';
               <!--Nixen-->
 
               <!--Nixen write up-->
-              <div class="flex flex-col p-3">
+              <div class="flex flex-col p-3 ">
                 <div class="text-white font-bold ">Iwuh<br> Alvana<br><span
                   class="text-gray-300 font-light text-[10px]">USUK designer</span>
                 </div>
@@ -36,7 +36,7 @@ import {Component} from '@angular/core';
                   <span class="bg-white text-black w-7 h-3 rounded-2xl absolute left-5 top-7 text-[9px] text-center">95%</span>
                 </div>
                 <div class=" pt-6">
-                  <div class="bg-white w-[40px] h-[25px] pr-20 rounded-2xl"></div>
+                  <div class="bg-white  h-[25px] pr-20 rounded-2xl"></div>
                 </div>
               </div>
             </div>
@@ -49,7 +49,7 @@ import {Component} from '@angular/core';
 
         <!--ends Daniel Nixen-->
         <!--your team-->
-        <div class="pb-3">
+        <div class="pb-2 pt-2">
           <div class="bg-white w-[440px] h-[195px] rounded-2xl ">
             <!--team and show all-->
             <div class="flex justify-between pt-3 p-2">
@@ -105,7 +105,7 @@ import {Component} from '@angular/core';
         </div>
         <!--your team ends-->
         <!--courses and webiners-->
-        <div class="bg-white w-[440px] h-[120px] rounded-2xl p-2">
+        <div class="bg-white  h-[120px] rounded-2xl p-2">
           <!--team and show all-->
           <div class="flex justify-between pt-3 p-2">
             <div class=" text-gray-900 text-[15px] font-bold ">courses and Webiners</div>

@@ -17,9 +17,9 @@ import {SideNavComponent} from './side-nav-section';
 
         <div class="flex flex-row">
           <!--first part of the div container-->
-          <div class=" w-[1000px] h-[550px]">
+          <div class=" h-[550px]">
             <!--div holding the welcome and search-->
-            <div class=" w-[1000px] h-[80px] pt-3">
+            <div class=" h-[80px] pt-3">
               <!--flex separating the search and welcome-->
               <div class="flex justify-between p-3">
                 <div><span class="font-bold text-gray-700">Welcome Daniel!</span><br><span
@@ -27,7 +27,7 @@ import {SideNavComponent} from './side-nav-section';
                 <!--flex separating the search and the circle-->
                 <div class="flex space-x-2">
                   <!--search section-->
-                  <div class="bg-gray-100 w-[400px] h-[35px] rounded-2xl cursor-pointer p-5 flex items-center">
+                  <div class="bg-gray-100 h-[35px] rounded-2xl cursor-pointer p-5 flex items-center">
                     <input type="text" placeholder="search" class="outline-none w-[400px]">
                   </div>
                   <!--ends the search section-->
