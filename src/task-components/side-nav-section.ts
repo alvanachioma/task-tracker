@@ -1,55 +1,45 @@
-import {Component} from '@angular/core';
+import { Component } from '@angular/core';
+
 import {CircleComponent} from './circle-sec';
-import {CircleComponents} from './circleblue-sec';
-import {NixenComponents} from './daniel-nisen-component';
-import {ProgressComponents} from './progress-section';
+import {CircleDotComponent} from './circledot-section';
+
+
 
 
 @Component({
-  selector: "side-nav-sections"  ,
-  imports: [CircleComponent, CircleComponents, NixenComponents,ProgressComponents
+  selector: 'side-nav',
+  imports: [CircleComponent, CircleDotComponent],
+  template:`
 
-  ],
-  template: `
-    <!--the side menu and two section of main content-->
-    <!--flex holding the 3 divs-->
-    <div class="flex">
-      <!--side menu container-->
-      <div class="  h-[450px] pt-3 p-5 flex flex-col justify-between items-center ">
-        <!--flex div for the first four-->
-        <div class=" flex flex-col space-y-2">
-          <!--the first five circle-->
-          <div class="flex flex-col space-y-2">
-            <circle2-section />
+
+     <div class="flex pt-15 md:pt-3">
+      <div class=" w-[80px] pt-7">
+        <div class="min-h-[455px]  flex flex-col justify-between items-center">
+          <div class=" flex flex-col space-y-2">
+            <circle-section bgcolor="bg-blue-950" iconclass="lab la-blogger" iconcolor="text-white"  />
             <circle-section />
-            <circle-section />
-            <circle-section />
-            <circle-section />
-          </div>
-        </div>
-        <!--ends the first 5 circle-->
-        <!--two circle down-->
-        <div class="flex flex-col space-y-2">
-        <circle-section />
-        <circle-section />
+            <circle-section iconclass="lab la-quora"/>
+             <smallcircle-sec iconclass2="lab la-windows" />
+            <circle-section iconclass="las la-folder"/>
       </div>
+
+      <div class="flex flex-col space-y-2">
+        <circle-section iconclass="las la-paste"/>
+        <circle-section iconclass="las la-sms"/>
       </div>
-        <!--ends the two circle down-->
-
-      <!--ends side menu-->
-      <nixen-sections />
-
-      <progress-sections />
 
     </div>
 
 
 
 
-  `,
 
-  styles:[],
+      </div>
+    </div>
+
+  `,
 })
-export class SideNavComponent {
-  title = 'side-nav-sections';
+
+export class NavigationComponent {
+  title = 'side-nav';
 }
