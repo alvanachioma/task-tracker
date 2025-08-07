@@ -16,16 +16,16 @@ import {CircleDotComponent} from './circledot-section';
       <div class=" w-[80px] pt-7">
         <div class="min-h-[455px]  flex flex-col justify-between items-center">
           <div class=" flex flex-col space-y-2">
-            <circle-section bgcolor="bg-blue-950" iconclass="lab la-blogger" iconcolor="text-white"  />
+            <circle-section bgColor="bg-blue-950" iconClass="lab la-blogger" iconColor="text-white"  />
             <circle-section />
-            <circle-section iconclass="lab la-quora"/>
-             <smallcircle-sec iconclass2="lab la-windows" />
-            <circle-section iconclass="las la-folder"/>
+            <circle-section iconClass="lab la-quora"/>
+            <circle-section [showBadge]="true" iconClass="lab la-windows" [badgeValue]="3"/>
+            <circle-section iconClass="las la-folder"/>
       </div>
 
       <div class="flex flex-col space-y-2">
-        <circle-section iconclass="las la-paste"/>
-        <circle-section iconclass="las la-sms"/>
+        <circle-section iconClass="las la-paste"/>
+        <circle-section iconClass="las la-sms"/>
       </div>
 
     </div>

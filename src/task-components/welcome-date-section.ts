@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import {Component, signal} from '@angular/core';
 import {NavigationComponent} from './side-nav-section';
 import {DateWelcomeComponent } from './date-component';
 import {SearchComponents} from './Search-component';
 import {CircleDotComponent } from './circledot-section';
+import {CircleComponent} from './circle-sec';
 
 
 
@@ -10,7 +11,7 @@ import {CircleDotComponent } from './circledot-section';
 @Component({
   selector: 'Search-sec',
   imports: [
-    NavigationComponent, DateWelcomeComponent, SearchComponents,CircleDotComponent,
+    NavigationComponent, DateWelcomeComponent, SearchComponents,  CircleComponent,
 
 
   ],
@@ -23,7 +24,7 @@ import {CircleDotComponent } from './circledot-section';
            <date-section />
             <div class="flex space-x-2 ">
               <search-section />
-              <smallcircle-sec />
+              <circle-section [showBadge]="true" iconClass="las la-bell" [badgeValue]="notificationCount()"/>
             </div>
           </div>
         </div>
@@ -38,4 +39,13 @@ import {CircleDotComponent } from './circledot-section';
 })
 export class SearchComponent {
   title = 'Search-sec';
+  notificationCount=signal(1);
+  fakeNotification(){
+    window.setTimeout(() => {
+      this.notificationCount.set(6000);
+    },10000);
+  }
+  ngOnInit() {
+    this.fakeNotification();
+  }
 }
