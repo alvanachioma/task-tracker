@@ -20,11 +20,12 @@ import {ProgressComponents} from './progress-section';
         <div class=" flex flex-col space-y-2">
           <!--the first five circle-->
           <div class="flex flex-col space-y-2">
-            <circle2-section />
-            <circle-section />
-            <circle-section />
-            <circle-section />
-            <circle-section />
+
+            <circle-section bgColor="bg-blue-600"/>
+            <circle-section bgColor="bg-red-600" iconClass="las la-glass-cheers" />
+            <circle-section bgColor="bg-white" iconColor="text-orange-600"/>
+            <circle-section iconColor="text-purple-600"/>
+            <circle-section iconColor="text-lime-600"/>
           </div>
         </div>
         <!--ends the first 5 circle-->

@@ -1,4 +1,4 @@
-import {Component} from '@angular/core';
+import {Component, input } from '@angular/core';
 
 
 
@@ -9,39 +9,21 @@ import {Component} from '@angular/core';
 
   ],
   template: `
-    <!--the side menu and two section of main content-->
-    <!--flex holding the 3 divs-->
+    <div class=" flex flex-col space-y-2">
+      <a href=""
+        class="{{bgColor()}} w-[40px] h-[40px] {{iconColor()}}
+        flex justify-center items-center
+        rounded-full hover:outline-2 hover:outline-blue-600">
+            <i class="{{iconClass()}} text-[1.6rem]"></i>
 
-        <div class=" flex flex-col space-y-2">
-          <!--the first five circle-->
-          <a href="">
-            <div class="bg-white w-[40px] h-[40px] rounded-full hover:outline-2 hover:outline-blue-600"></div>
-          </a>
-
-
-
-
-        </div>
-
-
-      <!--ends side menu-->
-
-
-
-
-
-
-
-
-
-
-
-
-
+      </a>
+    </div>
   `,
 })
 
 
 export class CircleComponent {
-  title = 'circle-section';
+  bgColor = input("bg-white") ;
+  iconClass = input(" las la-car-side ") ;
+  iconColor = input(" text-white") ;
 }

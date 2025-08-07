@@ -10,16 +10,16 @@ import {SideNavComponent} from './side-nav-section';
      TrackerComponents, SideNavComponent,
   ],
   template: `
-    <div class="flex justify-center items-center pt-10">
+    <div class="flex  pt-10">
       <!--container div holding every content-->
       <div class="bg-slate-200  h-[600px] rounded-2xl">
         <!--flex holding the two div of the container-->
 
         <div class="flex flex-row">
           <!--first part of the div container-->
-          <div class=" w-[1000px] h-[550px]">
+          <div class="  h-[550px]">
             <!--div holding the welcome and search-->
-            <div class=" w-[1000px] h-[80px] pt-3">
+            <div class=" h-[80px] pt-3">
               <!--flex separating the search and welcome-->
               <div class="flex justify-between p-3">
                 <div><span class="font-bold text-gray-700">Welcome Daniel!</span><br><span
